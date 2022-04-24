@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <section class="login-section hidden">
+      <div class="login">
+        <header>안녕하세요.</header>
+        <form id="login-form">
+          <input
+            type="text"
+            maxlength="15"
+            required
+            placeholder="여기에 아이디를 입력하고"
+          />
+          <button>로그인하기</button>
+        </form>
+      </div>
+    </section>
+    <section class="content-section hidden">
+      <div class="contents">
+        <header id="greeting"></header>
+        <section class="clock-section">
+          <div id="today"></div>
+          <div id="clock"></div>
+        </section>
+        <section class="location-weather-section">
+          <span></span><span></span>
+        </section>
+        <section class="quote-section">
+          <div>오늘의 어록</div>
+          <div class="quote"><span></span><span></span></div>
+        </section>
+        <section class="todo-list-section">
+          <header>할 일 목록</header>
+          <form id="todo-form">
+            <label for="new-todo">할 일 추가하기:</label>
+            <input type="text" id="new-todo" required />
+          </form>
+          <ul id="todo-list">
+            <!-- Add todo list using JS -->
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script
+      src="https://kit.fontawesome.com/36d74b3ddd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
